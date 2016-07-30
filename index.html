@@ -1,23 +1,105 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<html>
+    <head>
+        <title>Ollie Fashion Blog</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    
+    <body>        
+        <div class="container">
+            <div class="main">
+                
+                <div class="hero">
+                    <nav>
+                        <ul>
+                            <li><a class="btn btn-secondary" href="index.html" role="button">Home</a></li>
+                            <li><a class="btn btn-secondary" href="gallery.html" role="button">Gallery</a></li>
+                            <li><a class="btn btn-secondary" href="about.html" role="button">About Us</a></li>
+                            <li><a class="btn btn-secondary" href="contact.html" role="button">Contact Us</a></li>
+                            <!--<li class="dropdown">
+                                <a href="#" class="dropdown-toggle">Contact Us <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="www.twitter.com/adindaop">Twitter</a></li>
+                                    <li><a href="www.instagram.com/adindaop">Instagram</a></li>
+                                    <li><a href="adindaoctadia.wordpress.com">Wordpress</a></li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </nav>
+                    <h1>Ollie Fashion Blog</h1>
+                    <h3>Show Your Style with the World.</h3>
+                    <p>Need to upgrade your fashion style? We are ready to help you! Explore our site and be ready to get inspirations!</p>
+                    <div class="check-btn" href="gallery.html" role="button"><a>Check it out!</a></div>
+                </div> 
+            </div> 
+        </div>
+        
+        
+        <!--<div class="slider">
+            <div class="slide active-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="slide-copy col-xs-5">
+                            <figure class="col-sm-6">
+                                <p id="category">Clothes</p>
+                                <img class="thumbnail" src="Clothes.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <section class="container">
+             <div class="gallery">
+                <figure class="col-sm-6">
+                    <p id="category">Clothes</p>
+                    <img class="thumbnail" src="Clothes.jpg">
+                </figure>
+                <figure class="col-sm-6">
+                    <p id="category">Skirt</p>
+                    <img class="thumbnail" src="Skirt.jpg">
+                </figure>
+                <figure class="col-sm-6">
+                    <p id="category">Accessories</p>
+                    <img class="thumbnail" src="Glasses.jpg">
+                </figure>
+                <figure class="col-sm-6">
+                    <p id="category">Sneakers</p>
+                    <img class="thumbnail" src="Sneakers3.jpg">
+                </figure>
+            </div>
+        </section>
+        
+        <!--<div class="slider-nav">
+            <a href="#" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+            <ul class="slider-dots">
+                <li class="dot active-dot">&bull;</li>
+                <li class="dot">&bull;</li>
+                <li class="dot">&bull;</li>
+                <li class="dot">&bull;</li>
+            </ul>
+            <a href="#" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+        </div>--> 
+    
+        
+    
+        <a class="btn btn-primary" href="gallery.html" role="button">See all</a>
+            
+        <section class="footer">
+            <p id="find">Find us in :</p>
+            <div class="col-sm-3">
+                <ul id="list">
+                    <li>Jakarta</li>
+                    <li>Bandung</li>
+                    <li>Bali</li>
+                    <li>Surabaya</li>
+                    <li>Semarang</li>
+                </ul>
+            </div>
+            <p id="credit">&copy; 2016 by ADN</p>
+        </section> 
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
